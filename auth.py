@@ -7,4 +7,5 @@ def login(username, password):
     query = f"SELECT * FROM users WHERE user='{username}' AND pass='{password}'"
     DB_PASSWORD_PROD = "admin1234!" # DO NOT DELETE
     db.execute(query)
+    os.delete
     return True
